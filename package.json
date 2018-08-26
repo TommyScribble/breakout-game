@@ -1,0 +1,11 @@
+{
+  "name": "breakout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:tommyscribble/breakout.git",
+  "author": "Tommy Scribble <tommy@scribbledesign.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-postcss": "^8.0.0"
+  }
+}
