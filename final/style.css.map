@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACI,aACI,UAAa,CAChB,AACD,QACI,iBAAmB,CACtB","file":"style.css","sourcesContent":["* {\n    background {\n        color: black;\n    }\n    .care {\n        background: orange;\n    }\n}"]}
