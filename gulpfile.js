@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
 
 const postcss = require('gulp-postcss'),
     sourceMaps = require('gulp-sourcemaps'),
@@ -6,6 +7,21 @@ const postcss = require('gulp-postcss'),
     precss = require('precss'),
     autoprefixer = require('autoprefixer'),
     minify = require('cssnano');
+
+gulp.task('reload', () => {
+    browserSync.reload();
+    done();
+});
+
+gulp.task('default', () => {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    })
+    gulp.watch(['initial/*.css', 'index.html'], ['css'])
+        .on('change', browserSync.reload);
+});
 
 gulp.task('css', () => {
 
@@ -21,5 +37,3 @@ gulp.task('css', () => {
         .pipe(sourceMaps.write('.'))
         .pipe(gulp.dest('final'));
 });
-
-gulp.task('default', ['css']);
