@@ -6,6 +6,15 @@
   "author": "Tommy Scribble <tommy@scribbledesign.co.uk>",
   "license": "MIT",
   "dependencies": {
-    "gulp-postcss": "^8.0.0"
+    "postcss-short-color": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "cssnano": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-import": "^12.0.0",
+    "precss": "^3.1.2"
   }
 }
