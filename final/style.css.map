@@ -1,1 +1,1 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AACI,aACI,UAAa,CAChB,AACD,QACI,iBAAmB,CACtB","file":"style.css","sourcesContent":["* {\n    background {\n        color: black;\n    }\n    .care {\n        background: orange;\n    }\n}"]}
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,EAEI,SAAU,AADV,SAAW,CAEd,AACD,OACI,gBAAiB,AACjB,cAAe,AACf,aAAe,CAClB","file":"style.css","sourcesContent":["* {\n    padding: 0;\n    margin: 0;\n}\ncanvas {\n    background: #eee;\n    display: block;\n    margin: 0 auto;\n}"]}
