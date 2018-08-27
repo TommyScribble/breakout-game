@@ -19,7 +19,7 @@ gulp.task('default', () => {
             baseDir: './'
         }
     })
-    gulp.watch(['initial/*.css', 'index.html'], ['css'])
+    gulp.watch(['script.js', 'initial/*.css', 'index.html'], ['css'])
         .on('change', browserSync.reload);
 });
 
