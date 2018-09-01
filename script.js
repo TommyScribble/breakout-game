@@ -62,9 +62,11 @@ function draw() {
         dx = -dx;
         randomColor = colorHex();
     }
-    if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+    if (y + dy < ballRadius) {
         dy = -dy;
-        randomColor = colorHex();
+    } else if (y + dy > canvas.height - ballRadius) {
+        alert('GAME OVER!');
+        document.location.reload();
     }
 
     if (rightPressed && paddleX < canvas.width - paddleWidth) {
